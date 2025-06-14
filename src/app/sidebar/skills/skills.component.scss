@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  padding-top: $spacing-medium;
+}
+
+.skills-container{
+  padding-top: $spacing-small;
+}
+
+.skill-item{
+  display: flex;
+  padding-left: $spacing-medium;
+  padding-top: $spacing-xSmall;
+}
+
+.skill-text{
+  padding-left: $spacing-xSmall;
+}
+
+.image{
+  width: 20px;
+  height: 20px;
+}

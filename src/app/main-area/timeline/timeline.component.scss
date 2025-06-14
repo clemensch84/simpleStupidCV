@@ -1,0 +1,8 @@
+@import "../../../styles/variables";
+
+.timeline{
+  padding-top: $spacing-medium;
+  padding-right: $spacing-medium;
+  display: flex;
+  flex-direction: column;
+}

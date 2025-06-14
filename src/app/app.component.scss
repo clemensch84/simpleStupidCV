@@ -1,0 +1,17 @@
+@import "src/styles/_variables";
+
+.print-area{
+  width: $page-width;
+}
+
+.print-button{
+  position: absolute;
+  left: $page-width + 100px;
+}
+
+.content-area{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}

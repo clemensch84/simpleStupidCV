@@ -1,0 +1,39 @@
+<app-sidebar-pill [text]="personalInfo.title"></app-sidebar-pill>
+<div class="personal-info">
+  <div class="personal-info--item-container">
+  <div class="personal-info--item">
+    <i class="fa-solid fa-house personal-info--icon"></i>
+    <div class="personal-info--padding">
+      <span>{{personalInfo.streetAndHouseNumber}}</span>
+      <br/>
+      <span>{{personalInfo.city}}</span>
+    </div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-location-dot personal-info--icon"></i>
+      <div class="personal-info--padding">
+        <span>{{personalInfo.country}}</span>
+      </div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-phone personal-info--icon"></i>
+      <div class="personal-info--padding"><a [href]="personalInfo.telephoneNumber">{{personalInfo.telephoneNumber}}</a></div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-envelope personal-info--icon"></i>
+      <div class="personal-info--padding"><a [href]="personalInfo.email">{{personalInfo.email}}</a></div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-calendar-days personal-info--icon"></i>
+      <div class="personal-info--padding">{{personalInfo.birthday}}</div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-house-chimney-window personal-info--icon"></i>
+      <div class="personal-info--padding">{{personalInfo.familyStatus}}</div>
+    </div>
+    <div class="personal-info--item">
+      <i class="fa-solid fa-children personal-info--icon"></i>
+      <div class="personal-info--padding">{{personalInfo.children}}</div>
+    </div>
+  </div>
+</div>

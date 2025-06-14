@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.personal-info {
+  padding-left: $spacing-medium;
+}
+
+.personal-info--item{
+  display: flex;
+  flex-direction: row;
+  padding-top: $spacing-xSmall;
+}
+
+.personal-info--padding{
+  padding-left: 10px;
+}
+
+.personal-info--icon{
+  justify-content: start;
+  align-items: start;
+  width: $spacing-small;
+}
+
+.personal-info--item-container{
+  padding-top: $spacing-small;
+}
+
+a{
+  color: white;
+}

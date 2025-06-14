@@ -1,0 +1,34 @@
+<button class="no-print print-button" (click)="print()">Print</button>
+<div class="print-area flex-column">
+  <app-page [pageNumber]="1">
+    <app-header [header]="header"></app-header>
+    <div class="content-area">
+      <app-sidebar [showContent]="true">
+        <app-personal-info [personalInfo]="personalInfo"></app-personal-info>
+        <app-skills [skills]="skills"></app-skills>
+        <app-repository class="padding-top-medium" [repository]="repository"></app-repository>
+      </app-sidebar>
+      <app-timeline class="padding-top-medium" [dottedEndHeight]="100"
+                    [dottedStartHeight]="20"
+                    [title]="timelineProfessionalExperienceTitle"
+                    [timeLineElements]="timeLineProfessionalExperience1">
+      </app-timeline>
+    </div>
+  </app-page>
+  <app-page [pageNumber]="2">
+    <div class="content-area">
+    <app-sidebar [showContent]="true">
+    </app-sidebar>
+      <div class="flex-column">
+        <app-timeline [dottedStartHeight]="50"
+                      [timeLineElements]="timeLineProfessionalExperience2">
+        </app-timeline>
+        <app-timeline class="padding-top-medium"
+                      [title]="timelineEducationTitle"
+                      [timeLineElements]="timeLineEducation"
+                      [dottedStartHeight]="20">
+        </app-timeline>
+      </div>
+    </div>
+  </app-page>
+</div>

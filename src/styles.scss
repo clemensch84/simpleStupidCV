@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import "src/styles/variables";
+
+.header-offset{
+  padding-top: $spacing-medium;
+}
+
+.padding-top-medium {
+  padding-top: $spacing-medium;
+}
+
+.padding-top-small {
+  padding-top: $spacing-small;
+}
+
+.padding-left-medium {
+  padding-left: $spacing-medium;
+}
+
+.padding-left-small {
+  padding-left: $spacing-small;
+}
+
+.padding-right-xSmall {
+  padding-right: $spacing-xSmall;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+a{
+  color: $primary-color;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}

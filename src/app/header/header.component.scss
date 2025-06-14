@@ -1,0 +1,34 @@
+@import "src/styles/variables";
+
+.header {
+  width: $page-width;
+  height: $header-height;
+  background-color: $primary-color;
+}
+
+.header-padding{
+  height: $header-offset;
+  background-color: $secondary-color;
+  width: $sidebar-width;
+  padding-left: $spacing-small;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  padding-left: 50px;
+}
+
+.primary-text{
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+}
+
+.secondary-text{
+  color: white;
+  font-size: x-large;
+}
