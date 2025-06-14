@@ -1,0 +1,30 @@
+<div *ngIf="!dottedHeight else dottedElement" class="timeline--element">
+  <div class="year timeline--element__height">{{timelineElement.timeText}}</div>
+  <div class="timeline--element__height">
+    <div class="circle"></div>
+  </div>
+  <div class="content">
+    <div class="experience-element">
+      <div *ngIf="timelineElement.link else nolink" class="company-name"><a [href]="timelineElement.link">{{timelineElement.primaryText}}</a></div>
+      <ng-template #nolink>
+        <div class="company-name">{{timelineElement.primaryText}}</div>
+      </ng-template>
+      <div class="job-title">{{timelineElement.secondaryText}}</div>
+        <ul *ngFor="let activity of timelineElement.activities">
+          <li>{{activity}}</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<ng-template #dottedElement>
+  <div class="timeline--element">
+    <div class="year timeline--element-dotted__height">
+      <div class="dotted-spacer-year"></div>
+    </div>
+    <div class="timeline--element-dotted__height">
+      <div class="dotted-spacer"></div>
+    </div>
+    <div [style.height.px]="dottedHeight" class="content dotted"></div>
+  </div>
+</ng-template>

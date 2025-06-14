@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.page-count{
+  position: relative;
+  top: $page-height - 10;
+}
+
+.page-count--pill{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border: thin solid white;
+  border-style: solid solid solid none;
+  border-radius: 0 30px 30px 0;
+  padding: 15px 20px 15px 20px;
+  font-weight: bold;
+  width: 100px;
+  justify-content: end;
+}

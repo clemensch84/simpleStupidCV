@@ -1,0 +1,10 @@
+<app-main-area-pill *ngIf="title"  [text]="title"></app-main-area-pill>
+<div class="timeline">
+  <div class="timeline-elements">
+    <app-timeline-element *ngIf="dottedStartHeight" [dottedHeight]="dottedStartHeight"></app-timeline-element>
+    <ng-container *ngFor="let timeLineElement of timeLineElements">
+      <app-timeline-element [timelineElement]="timeLineElement"></app-timeline-element>
+    </ng-container>
+    <app-timeline-element *ngIf="dottedEndHeight" [dottedHeight]="dottedEndHeight"></app-timeline-element>
+  </div>
+</div>

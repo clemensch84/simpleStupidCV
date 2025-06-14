@@ -1,0 +1,19 @@
+@import "src/styles/variables";
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: $page-width;
+  font-family: IBM Plex Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: $page-height;
+  box-sizing: border-box;
+}
+
+.new-page{
+  position: absolute;
+  width: $page-width;
+  height: 0;
+  border-bottom: dashed;
+}

@@ -1,0 +1,9 @@
+<div class="skills">
+  <app-sidebar-pill [text]="title"></app-sidebar-pill>
+  <div class="skills-container" >
+    <div *ngFor="let skill of skills" class="skill-item">
+      <div *ngIf="skill.icon"><i [class]="skill.icon" class="image"></i></div>
+      <div class="skill-text">{{skill.name}}</div>
+    </div>
+  </div>
+</div>

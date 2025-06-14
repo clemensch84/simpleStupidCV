@@ -1,0 +1,79 @@
+@import "../../../../styles/variables";
+
+$element-padding: 3px;
+
+.timeline--element{
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline--element__height {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.timeline--element-dotted__height {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.circle{
+  position: relative;
+  left: 6px;
+  min-width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.year {
+  justify-content: end;
+  min-width: 90px;
+  padding-left: $spacing-xSmall;
+  padding-right: $spacing-xSmall;
+  color: rgba(32, 46, 75, .9);
+  line-height: 12px;
+  font-weight: lighter;
+}
+
+.content{
+  border: thin solid $primary-color;
+  border-style: none none none solid;
+  padding-left: $spacing-xSmall;
+}
+
+.experience-element{
+  padding-bottom: $spacing-xSmall;
+}
+
+.company-name{
+  font-size: large;
+  padding: $element-padding;
+  font-weight: bold;
+}
+
+.job-title{
+  font-weight: bold;
+  padding: $element-padding;
+}
+
+ul {
+  margin-block-start: 2px;
+}
+
+.dotted{
+  border: thin dashed $primary-color;
+  border-style: none none none dashed;
+}
+
+.dotted-spacer{
+  min-width: 12px;
+  height: 12px;
+}
+
+.dotted-spacer-year{
+  min-width: 90px;
+}
