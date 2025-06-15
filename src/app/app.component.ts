@@ -8,10 +8,14 @@ import {
   EDUCATION_TITLE,
   EXPERIENCE_TITLE,
   HEADER,
+  PAGE_TEXT,
   PERSONAL_INFO,
   REPOSITORY,
-  SKILLS, TIMELINE_EDUCATION,
-  TIMELINE_PROFESSIONAL_EXPERIENCE1, TIMELINE_PROFESSIONAL_EXPERIENCE2
+  SKILLS,
+  SKILLS_TITLE,
+  TIMELINE_EDUCATION,
+  TIMELINE_PROFESSIONAL_EXPERIENCE1,
+  TIMELINE_PROFESSIONAL_EXPERIENCE2
 } from "./app.constants";
 
 const PRINT_MESSAGE = "Select your pdf printer in the following dialogue. Please activate the “Background graphics” option and set borders to ”none” in the print dialog to print the " +
@@ -28,6 +32,9 @@ const PRINT_MESSAGE = "Select your pdf printer in the following dialogue. Please
 
 export class AppComponent {
   public readonly header: Header = HEADER;
+  public readonly pageText = PAGE_TEXT;
+
+  public readonly skillTitle = SKILLS_TITLE;
   public readonly skills: Skill[] = SKILLS;
   public readonly personalInfo: PersonalInfo = PERSONAL_INFO;
   public readonly repository: Repository = REPOSITORY;

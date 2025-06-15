@@ -8,4 +8,5 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 })
 export class PageComponent {
   @Input() public pageNumber: number = 1;
+  @Input() public pageText: string = 'Page';
 }
