@@ -35,6 +35,20 @@ export const PERSONAL_INFO: PersonalInfo = {
   children: '2 children'
 }
 
+export const LANGUAGES_TEXT = 'Languages';
+export const LANGUAGES = [
+    'English',
+    'German',
+    'Spanish',
+]
+
+export const INTERESTS_TITLE = 'Interests';
+export const INTERESTS = [
+  'Footbal',
+  'Baseball',
+  'Spaceballs'
+]
+
 export const REPOSITORY: Repository = {
   title: 'GitHub Repository',
   name: 'github.com/myRepositoy',
