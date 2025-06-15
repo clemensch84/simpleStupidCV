@@ -17,6 +17,12 @@
   <app-page [pageNumber]="2" [pageText]="pageText">
     <div class="content-area">
     <app-sidebar [showContent]="true">
+        <app-generic-sidebar-list [listTitle]="languagesText"
+                                  [ListElements]="languages">
+        </app-generic-sidebar-list>
+        <app-generic-sidebar-list [listTitle]="interestsTitle"
+                                  [ListElements]="interests">
+        </app-generic-sidebar-list>
         <app-repository class="padding-top-medium" [repository]="repository"></app-repository>
     </app-sidebar>
       <div class="flex-column">

@@ -15,6 +15,7 @@ import { PageComponent } from './page/page.component';
 import { TimelineComponent } from './main-area/timeline/timeline.component';
 import { TimelineElementComponent } from './main-area/timeline/timeline-element/timeline-element.component';
 import { RepositoryComponent } from './sidebar/repository/repository.component';
+import { GenericSidebarList } from './sidebar/languages/generic-sidebar-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { RepositoryComponent } from './sidebar/repository/repository.component';
     PageComponent,
     TimelineComponent,
     TimelineElementComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    GenericSidebarList
   ],
   imports: [
     BrowserModule,
