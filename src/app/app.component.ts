@@ -8,6 +8,10 @@ import {
   EDUCATION_TITLE,
   EXPERIENCE_TITLE,
   HEADER,
+  INTERESTS,
+  INTERESTS_TITLE,
+  LANGUAGES,
+  LANGUAGES_TEXT,
   PAGE_TEXT,
   PERSONAL_INFO,
   REPOSITORY,
@@ -37,6 +41,13 @@ export class AppComponent {
   public readonly skillTitle = SKILLS_TITLE;
   public readonly skills: Skill[] = SKILLS;
   public readonly personalInfo: PersonalInfo = PERSONAL_INFO;
+
+  public readonly languagesText = LANGUAGES_TEXT;
+  public readonly languages = LANGUAGES;
+
+  public readonly interestsTitle = INTERESTS_TITLE;
+  public readonly interests = INTERESTS;
+
   public readonly repository: Repository = REPOSITORY;
 
   public readonly timelineProfessionalExperienceTitle = EXPERIENCE_TITLE;
