@@ -1,26 +1,26 @@
 <button class="no-print print-button" (click)="print()">Print</button>
 <div class="print-area flex-column">
-  <app-page [pageNumber]="1">
+  <app-page [pageNumber]="1" [pageText]="pageText">
     <app-header [header]="header"></app-header>
     <div class="content-area">
       <app-sidebar [showContent]="true">
         <app-personal-info [personalInfo]="personalInfo"></app-personal-info>
-        <app-skills [skills]="skills"></app-skills>
-        <app-repository class="padding-top-medium" [repository]="repository"></app-repository>
+        <app-skills [skills]="skills" [title]="skillTitle"></app-skills>
       </app-sidebar>
-      <app-timeline class="padding-top-medium" [dottedEndHeight]="100"
+      <app-timeline class="padding-top-medium" [dottedEndHeight]="80"
                     [dottedStartHeight]="20"
                     [title]="timelineProfessionalExperienceTitle"
                     [timeLineElements]="timeLineProfessionalExperience1">
       </app-timeline>
     </div>
   </app-page>
-  <app-page [pageNumber]="2">
+  <app-page [pageNumber]="2" [pageText]="pageText">
     <div class="content-area">
     <app-sidebar [showContent]="true">
+        <app-repository class="padding-top-medium" [repository]="repository"></app-repository>
     </app-sidebar>
       <div class="flex-column">
-        <app-timeline [dottedStartHeight]="50"
+        <app-timeline [dottedStartHeight]="30"
                       [timeLineElements]="timeLineProfessionalExperience2">
         </app-timeline>
         <app-timeline class="padding-top-medium"

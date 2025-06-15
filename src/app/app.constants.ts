@@ -7,8 +7,11 @@ import {TimelineElement} from "./main-area/timeline/timeline-element/timeline-el
 export const HEADER: Header = {
   name: 'John Doe',
   subtext: 'Master of Science',
-}
+};
 
+export const PAGE_TEXT = 'PAGE';
+
+export const SKILLS_TITLE = 'Skills';
 export const SKILLS: Skill[] = [
   {name: "Coding", icon: 'fa-solid fa-code'},
   {name: "HTML5", icon: 'fa-brands fa-html5'},

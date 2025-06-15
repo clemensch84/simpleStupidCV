@@ -5,14 +5,22 @@
   </div>
   <div class="content">
     <div class="experience-element">
-      <div *ngIf="timelineElement.link else nolink" class="company-name"><a [href]="timelineElement.link">{{timelineElement.primaryText}}</a></div>
+      <div *ngIf="timelineElement.link else nolink" class="company-name">
+          <a [href]="timelineElement.link">{{timelineElement.primaryText}}</a>
+      </div>
       <ng-template #nolink>
         <div class="company-name">{{timelineElement.primaryText}}</div>
       </ng-template>
       <div class="job-title">{{timelineElement.secondaryText}}</div>
-        <ul *ngFor="let activity of timelineElement.activities">
-          <li>{{activity}}</li>
-        </ul>
+        <ng-container *ngIf="timelineElement.activities.length === 1 else listOrNone">
+            <div class="padding-bottom-xSmall">{{timelineElement.activities[0]}}</div>
+        </ng-container>
+        <ng-template #listOrNone>
+            <div *ngIf="timelineElement.activities.length === 0" class="padding-bottom-xSmall"></div>
+            <ul *ngIf="!!timelineElement.activities.length">
+                <li *ngFor="let activity of timelineElement.activities" class="padding-bottom-xSmall">{{activity}}</li>
+            </ul>
+        </ng-template>
     </div>
   </div>
 </div>

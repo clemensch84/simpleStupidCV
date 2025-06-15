@@ -25,6 +25,10 @@
   padding-right: $spacing-xSmall;
 }
 
+.padding-bottom-xSmall {
+  padding-bottom: $spacing-xSmall;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -58,4 +62,82 @@ a:link {
 
 a:visited {
   text-decoration: none;
+}
+
+.customIcon {
+  filter: invert(1);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+}
+
+.angular{
+  @extend .customIcon;
+  background: url('assets/images/angular.svg') no-repeat center center;
+}
+
+.typescript{
+  @extend .customIcon;
+  background: url('assets/images/typescript.svg') no-repeat center center;
+}
+
+.bitbucket{
+  @extend .customIcon;
+  background: url('assets/images/bitbucket.svg') no-repeat center center;
+}
+
+.cplusplus{
+  @extend .customIcon;
+  background: url('assets/images/cplusplus.svg') no-repeat center center;
+}
+
+.css{
+  @extend .customIcon;
+  background: url('assets/images/css.svg') no-repeat center center;
+}
+
+.git{
+  @extend .customIcon;
+  background: url('assets/images/git.svg') no-repeat center center;
+}
+
+.html5{
+  @extend .customIcon;
+  background: url('assets/images/html5.svg') no-repeat center center;
+}
+
+.htmx{
+  @extend .customIcon;
+  background: url('assets/images/htmx.svg') no-repeat center center;
+}
+
+.javascript{
+  @extend .customIcon;
+  background: url('assets/images/javascript.svg') no-repeat center center;
+}
+
+.jira{
+  @extend .customIcon;
+  background: url('assets/images/jira.svg') no-repeat center center;
+}
+
+.kotlin{
+  @extend .customIcon;
+  background: url('assets/images/kotlin.svg') no-repeat center center;
+}
+
+.reactivex{
+  @extend .customIcon;
+  background: url('assets/images/reactivex.svg') no-repeat center center;
+}
+
+.sass{
+  @extend .customIcon;
+  background: url('assets/images/sass.svg') no-repeat center center;
+}
+
+.android{
+  @extend .customIcon;
+  background: url('assets/images/android.svg') no-repeat center center;
 }
