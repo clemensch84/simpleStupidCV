@@ -1,4 +1,19 @@
-# Lebenslauf
+# SimpleStupidCV
+
+Attention! This project is not meant to be served!!!
+
+I wanted to use Angular to create my CV instead of known and hated word processing programs.
+This gave much more flexibility and freedom for design and arrangement.
+
+You can adapt the code to yor own needs to create you own CV. 
+You can use the print button in the upper right corner to open the print dialogue of your browser
+for creating beautiful PDFs. 
+
+Currently only tested on Chrome for Mac
+
+Please be careful to not share any sensitive or personal data! 
+
+Have fun!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
 
